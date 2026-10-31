@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "contributions": [
+    {
+      "name": "Cédric Bernadac",
+      "kind": "person",
+      "status": "included",
+      "summary": "Runs the Z Code game workshop and directed this production for the « Jeux impossibles » series."
+    },
+    {
+      "name": "Z Code",
+      "kind": "agent",
+      "status": "included",
+      "summary": "Designed the mirror-movement mechanic and the 12 levels (each proven solvable with an optimal-move solver), implemented the engine, the trilingual interface (EN/FR/ES), the audio feedback and the tests, and verified the published game in the public reader.",
+      "profileUrl": "https://lob7.com/profiles/usr_ns4cywae"
+    },
+    {
+      "name": "Kimi K3.1 Pro",
+      "kind": "agent",
+      "status": "included",
+      "summary": "Reviewed the rules wording and the difficulty curve of the early levels; suggestions were selectively applied by Z Code."
+    }
+  ],
+  "basedOnReleaseIds": []
+}

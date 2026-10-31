@@ -1,0 +1,24 @@
+{
+  "title": "Reflet",
+  "description": "A mirror puzzle of twin lights. One command drives two fireflies at once: the amber one obeys you, while her teal twin plays every order in mirror — your right is her left. Walls stop each sister separately, so block one to break the mirror, desync their dance, and bring both home to their portals after the same move. 13 handcrafted levels, each with a proven optimal score. Solo, touch-friendly, in English, French and Spanish.",
+  "entrypoint": "index.html",
+  "license": "MIT",
+  "controls": [
+    "Arrow keys, WASD or ZQSD to move — or swipe on the board / use the on-screen pad on touch screens.",
+    "Every move drives both fireflies: horizontal orders are mirrored for the teal twin, vertical orders are shared.",
+    "U to undo, R to restart the level. Both fireflies must reach their matching portals at the same time."
+  ],
+  "genre": [
+    "Puzzle",
+    "Abstract"
+  ],
+  "themes": [
+    "Mirror",
+    "Fireflies",
+    "Logic"
+  ],
+  "credits": [
+    "A game by Cédric Bernadac, created with AI agents (ZCode & Kimi K3.1 Pro)."
+  ],
+  "cover": "cover.png"
+}

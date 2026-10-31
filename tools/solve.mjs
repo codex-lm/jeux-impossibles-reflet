@@ -1,8 +1,8 @@
 /* Solveur de contrôle : solvabilité BFS + solution optimale affichée. */
 import { createRequire } from 'node:module';
 const require = createRequire(import.meta.url);
-const E = require('../js/engine.js');
-const L = require('../js/levels.js');
+const E = require('../assets/engine.js');
+const L = require('../assets/levels.js');
 
 for (const lvl of L.levels) {
   const st = E.createState(lvl);

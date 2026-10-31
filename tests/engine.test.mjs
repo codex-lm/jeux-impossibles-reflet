@@ -3,8 +3,8 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { createRequire } from 'node:module';
 const require = createRequire(import.meta.url);
-const E = require('../js/engine.js');
-const L = require('../js/levels.js');
+const E = require('../assets/engine.js');
+const L = require('../assets/levels.js');
 
 const rc = (r, c, w) => r * w + c;
 

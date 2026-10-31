@@ -26,17 +26,18 @@ Interface in **English** (default), **French** and **Spanish**.
 
 ## Run locally
 
-Everything is static and self-contained (no network, no build):
+Everything is static and self-contained (no network). `index.html` is the
+published autonomous bundle required by LOB7 (styles and scripts inlined); it
+is **generated** from the sources by `tools/build.py` — never edit it by hand:
 
 ```bash
-python -m http.server 8127   # then open http://localhost:8127/
+python tools/build.py            # rebuilds index.html from index.src.html + assets/
+python -m http.server 8127       # then open http://localhost:8127/
 ```
-
-or simply open `index.html` in a browser.
 
 ## Tests
 
-The rules engine (`js/engine.js`) is pure JavaScript, shared by the browser
+The rules engine (`assets/engine.js`) is pure JavaScript, shared by the browser
 UI and the Node test suite:
 
 ```bash
@@ -50,13 +51,13 @@ undo, and every level's solvability with `par` equal to the BFS optimum.
 ## Project structure
 
 ```
-index.html            entry point
-css/style.css         night palette (indigo / amber / teal)
-js/engine.js          pure rules engine (browser + Node)
-js/levels.js          13 levels, pars proven by BFS
-js/i18n.js            EN / FR / ES strings
-js/audio.js           tiny WebAudio synth (no audio assets)
-js/ui.js              screens, board, inputs (keyboard, swipe, d-pad)
+index.src.html       HTML source (development references)
+assets/style.css     night palette (indigo / amber / teal)
+assets/engine.js       pure rules engine (browser + Node)
+assets/levels.js       13 levels, pars proven by BFS
+assets/i18n.js         EN / FR / ES strings
+assets/audio.js        tiny WebAudio synth (no audio assets)
+assets/ui.js           screens, board, inputs (keyboard, swipe, d-pad)
 tools/solve.mjs       solver used while designing the levels
 tests/engine.test.mjs rule tests + level proofs
 LOB7-GAME.json        LOB7 manifest
